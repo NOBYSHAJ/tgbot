@@ -19,18 +19,23 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
 
-ഹായ് {}, എന്റെ പേര് {}! ഞാൻ [ഇദ്ദേഹം](tg://user?id={}) നോക്കി നടത്തുന്ന ഒരു അടിപൊളി അഡ്മിൻ ബോട്ടാണ്.
+✮ 𝙽𝙰𝙼𝙴:- {}!
 
-എന്നെ നിർമ്മിച്ചിരിക്കുന്നത് python3 യിൽ python-telegram-bot ലൈബ്രറി ഉപയോഗിച്ചാണ്. ഞാൻ പൂർണ്ണമായിട്ടും ഓപ്പൺസോഴ്സ്ഡ് ആണ്. എന്റെ കോഡ് നിങ്ങൾക്ക് [ഇവിടെ](https://github.com/jithumon/tgbot) കാണുവാൻ സാധിക്കും.
+✮ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁:- @Neonhexboy
 
-എന്നെപ്പോലെ ഒരു അഡ്മിൻ ബോട്ടിനെ ഉണ്ടാക്കുവാൻ താഴെ കൊടുത്തിരിക്കുന്ന വീഡിയോ കാണുക.
+✮ 𝚄𝙿𝙳𝙰𝚃𝙴𝚂:-🌀⚡️ CINEMA COMICS 🎬
 
-എന്റെ അപ്ഡേറ്റുകളെക്കുറിച്ചും പ്രവർത്തനത്തെപറ്റിയും അറിയുവാൻ അപ്ഡേറ്റ് ചാനൽ സബ്സ്ക്രൈബ് ചെയ്യുക.
+✮ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈:-𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 
-കൂടെ താഴെ കൊടുത്തിരിക്കുന്ന ടെക് ഗെയിമിംഗ് യൂട്യൂബ് ചാനൽ സബ്സ്ക്രൈബ് ചെയ്യാനും മറക്കേണ്ട.
+✮ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴:-𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
 
-ലഭ്യമായ കമാന്റുകളെപ്പറ്റി അറിയുവാൻ /help അമർത്തുക.
+✮ 𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴:- shrimadhavuk
 
+✮ 𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁:-heroku
+
+✮ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂:-𝚅1.0.43
+
+✮ GROUP:-🌀⚡️ CINEMA COMICS 2.0📽️
 """
 
 HELP_STRINGS = """
@@ -151,11 +156,11 @@ def start(bot: Bot, update: Update, args: List[str]):
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://youtu.be/W6CLKrehy6w")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/KeralaBots"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/KochuUpdates")],
-                     [InlineKeyboardButton(text="🎬 Youtube Channel", url="https://www.youtube.com/stealthtechnogaming?sub_confirmation=1"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/Cmkmedia "), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/Cmkmedia ")],
+                     [InlineKeyboardButton(text="🎬 Channel", url="@Cmkmedia "), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("okda ...")
 
 
 # for test purposes
